@@ -30,14 +30,15 @@
               <p style="text-align:center">
                 <name>Connor Lawless</name>
               </p>
-              <p>I am a fourth year PhD at Cornell studying <a href="https://www.orie.cornell.edu/orie"> Operations Research and Information Engineering</a>, where I am fortunate enough to be advised by <a href='https://www.orie.cornell.edu/faculty-directory/oktay-gunluk'>Oktay Gunluk </a>.
+              <p>I am a fifth year PhD at Cornell studying <a href="https://www.orie.cornell.edu/orie"> Operations Research and Information Engineering</a>, where I am fortunate enough to be advised by <a href='https://www.orie.cornell.edu/faculty-directory/oktay-gunluk'>Oktay Gunluk </a>.
               </p>
               <p>
-                My work focuses on leveraging tools from integer programming to design fair and interpretable machine learning algorithms suitable for high stakes decision making. Prior to joining Cornell, I completed my undergraduate at the University of Toronto studying industrial engineering and spent a year working at the Royal Bank of Canada building deep reinforcement learning based trade execution algorithms. I was also lucky enough to spend the summer of 2021 working remotely with the Applied AI group at IBM research working on interpretable clustering. In addition to my research, I'm passionate about training the next generation of data scientists through programs such as <a href ="https://ixperience.co/"> iXperience</a> where I've taught introductory practical data science tools in Python and R to students around the world. 
+                My work focuses on leveraging tools from integer programming to design fair and interpretable machine learning algorithms suitable for high stakes decision making. Prior to joining Cornell, I completed my undergraduate at the University of Toronto studying industrial engineering and spent a year working at the Royal Bank of Canada building deep reinforcement learning based trade execution algorithms. I was also lucky enough to spend the summer of 2021 working remotely with the Applied AI group at IBM research working on interpretable clustering, and the summer of 2023 working at Microsoft Research. In addition to my research, I'm passionate about training the next generation of data scientists through programs such as <a href ="https://ixperience.co/"> iXperience</a> where I've taught introductory practical data science tools in Python and R to students around the world. 
               </p>
               <p>
               	Outside of the office, you'll find me hiking (19 national parks and counting), practicing yoga, or burying myself in a sci-fi book.
               </p>
+              <p><b>I will be on the 2023-2024 academic job market!</b></p>
               <p style="text-align:center">
                 <a href="mailto:cal379@cornell.edu">Email</a> &nbsp/&nbsp
                 <a href="data/Connor_CV.pdf">CV</a> &nbsp/&nbsp
@@ -69,7 +70,24 @@
               <br>
               <em> Working Paper </em>  
               <p></p>
-              <p> This paper considers the problem of performing k-means clustering while ensuring groups (e.g. demographic groups) have that minimum level of representation in a specified number of clusters. We show that the popular $k$-means algorithm, Lloyd's algorithm, can result in unfair outcomes where certain groups lack sufficient representation past the minimum threshold in a proportional number of clusters. We formulate the problem through a mixed-integer optimization framework and present a variant of Lloyd's algorithm, called MiniReL, that directly incorporates the fairness constraints. </p>
+              <p> This paper considers the problem of performing k-means clustering while ensuring groups (e.g. demographic groups) have that minimum level of representation in a specified number of clusters. We show that the popular k-means algorithm, Lloyd's algorithm, can result in unfair outcomes where certain groups lack sufficient representation past the minimum threshold in a proportional number of clusters. We formulate the problem through a mixed-integer optimization framework and present a variant of Lloyd's algorithm, called MiniReL, that directly incorporates the fairness constraints. </p>
+            </td>
+         </tr>
+         <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            	<img src='images/pareto_magic.png' width="250">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> <a href='https://arxiv.org/pdf/2111.08466.pdf'> Interpretable and Fair Boolean Rule Sets via Column Generation </a></papertitle>
+              <br>
+              <strong>Connor Lawless</strong>,
+              <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-sanjeebd">Sanjeeb Dash</a>,
+              <a href="https://www.orie.cornell.edu/faculty-directory/oktay-gunluk">Oktay Gunluk</a>,
+              <a href="https://sites.google.com/site/dennislwei/">Dennis Wei</a>
+              <br>
+              <em> Journal of Machine Learning Research</em>  
+              <p></p>
+              <p> This paper considers the learning of Boolean rules in disjunctive normal form (DNF, OR-of-ANDs, equivalent to decision rule sets) as an interpretable model for classification.  An integer program is formulated to optimally trade classification accuracy for rule simplicity. We also consider the fairness setting and extend the formulation to include explicit constraints on two different measures of classification parity: equality of opportunity and equalized odds. Check out a short presenation on this paper at the <a href='https://youtu.be/IlZPrleWjmY?t=2517'>Machine Learning NeEDS Mathematical Optimization Seminar</a>. </p>
             </td>
          </tr>
 
@@ -85,7 +103,7 @@
               <br>
               <em> ICML 2023 </em>  
               <p></p>
-              <p> We extend the idea of use polyhedra to define clusters to the cluster description setting where cluster assignments are fixed and the goal is to explain them as simply as possible. We model the problem as an exponential-sized IP which we use column generation to solve, and introduce a novel grouping scheme to help our approach tackle large datasets. </p>
+              <p> We extend the idea of using polyhedra to define clusters to the cluster description setting where cluster assignments are fixed and the goal is to explain them as simply as possible. We model the problem as an exponential-sized IP which we use column generation to solve, and introduce a novel grouping scheme to help our approach tackle large datasets. </p>
             </td>
          </tr>
 
@@ -104,7 +122,7 @@
               <br>
               <em> AAAI 2022</em>  
               <p></p>
-              <p> We propose a novel approach for interpretable clustering that both clusters data points and constructs polytopes around the discovered clusters to explain them. Our framework allows for additional constraints on the polytopes including ensuring that the hyperplanes constructing the polytope are axis-parallel or sparse with integer coefficients. </p>
+              <p> We propose a novel approach for interpretable clustering that both clusters data points and constructs polyhedra around the discovered clusters to explain them. Our framework allows for additional constraints on the polyhedra including ensuring that the hyperplanes constructing the polyhedra are axis-parallel or sparse with integer coefficients. </p>
             </td>
          </tr>
 
@@ -129,7 +147,7 @@
             	<img src='images/faircg_new.png' width="250">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> <a href='https://arxiv.org/abs/2107.01325'> Fair and Interpretable Decision Rules for Binary Classification </a></papertitle>
+              <papertitle> <a href='https://arxiv.org/abs/2107.01325'> Fair Decision Rules for Binary Classification </a></papertitle>
               <br>
               <strong>Connor Lawless</strong>,
               <a href="https://www.orie.cornell.edu/faculty-directory/oktay-gunluk">Oktay Gunluk</a>
@@ -139,7 +157,7 @@
               <em> AI for Social Good Workshop, IJCAI 2021</em>  
               <br>
               <p></p>
-              <p> In this work we explore learning boolean rule sets with constraints on group fairness and rule set complexity. Our algorithm FairCG is able to achieve comparable performance to other interpretable models with stronger fairness guarantees. Check out a short presenation on this paper at the <a href='https://youtu.be/IlZPrleWjmY?t=2517'>Machine Learning NeEDS Mathematical Optimization Seminar</a>. </p>
+              <p> In this work we explore learning boolean rule sets with constraints on group fairness and rule set complexity. Our algorithm FairCG is able to achieve comparable performance to other interpretable models with stronger fairness guarantees.</p>
             </td>
          </tr>
 
