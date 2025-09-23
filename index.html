@@ -33,7 +33,7 @@
               <p> I am currently a Human-Centered AI postdoctoral fellow at Stanford advised by <a href="https://web.stanford.edu/~udell/"> Madeleine Udell</a> and <a href="https://vitercik.github.io/"> Ellen Vitercik</a>. Previously, I did my PhD at Cornell in <a href="https://www.orie.cornell.edu/orie"> Operations Research and Information Engineering</a>, where I was fortunate enough to be advised by the incomparable <a href='https://sites.google.com/site/oktaygunlukresearch/'>Oktay Gunluk </a>.
               </p>
               <p>
-                My work leverages tools from machine learning, computational optimization, and human-computer interaction to build human-centered systems for artificial intelligence. Prior to joining Cornell, I completed my undergraduate at the University of Toronto studying industrial engineering and spent a year working at the Royal Bank of Canada building deep reinforcement learning based trade execution algorithms. I was also lucky enough to spend the summer of 2021 working remotely with the Applied AI group at IBM research on interpretable clustering, and the summer of 2023 working at Microsoft Research with the <a href ="https://www.microsoft.com/en-us/research/group/human-understanding-and-empathy/"> Human Understanding and Empathy Group</a> and the <a href ="https://www.microsoft.com/en-us/research/group/office-of-applied-research/"> Office of Applied Research </a> on LLMs for Constraint Programming. 
+                My work leverages tools from machine learning, computational optimization, and human-computer interaction to build human-centered artificial intelligence. Prior to joining Cornell, I completed my undergraduate at the University of Toronto studying industrial engineering and spent a year working at the Royal Bank of Canada building deep reinforcement learning based trade execution algorithms. I was also lucky enough to spend the summer of 2021 working remotely with the Applied AI group at IBM research on interpretable clustering, and the summer of 2023 working at Microsoft Research with the <a href ="https://www.microsoft.com/en-us/research/group/human-understanding-and-empathy/"> Human Understanding and Empathy Group</a> and the <a href ="https://www.microsoft.com/en-us/research/group/office-of-applied-research/"> Office of Applied Research </a> on LLMs for Constraint Programming. 
               </p>
               <p>
               	In addition to my research, I'm passionate about training the next generation of data scientists through programs such as <a href ="https://ixperience.co/"> iXperience</a> where I've taught introductory practical data science tools in Python and R to students around the world. Outside of the office, you're most likely to find me hiking (27 national parks and counting).
@@ -62,44 +62,6 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/ReVeR_outputs.png' width="300">
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle> <a href='https://arxiv.org/abs/2502.16380'> Understanding Fixed Predictions via Confined Regions </a></papertitle>
-            <br>
-            <strong>Connor Lawless</strong>,
-            <a href="https://lilywenglab.github.io/">Lily Weng</a>,
-            <a href="https://www.berkustun.com/">Berk Ustun</a>,
-            <a href="https://web.stanford.edu/~udell/">Madeleine Udell</a>,
-            <br>
-            <em> ICML 2025 </em>  
-            <p></p>
-            <p> Machine learning models are designed to predict outcomes using features about an individual, but fail to take into account how individuals can change them. Consequently, models can assign fixed predictions that deny individuals recourse to change their outcome. This work develops a new paradigm to identify fixed predictions by finding confined regions in which all individuals receive fixed predictions. We introduce the first method,
-              ReVer, for this task, using tools from mixed-integer quadratically constrained programming. Our approach certifies recourse for out-of-sample data, provides interpretable descriptions of confined regions, and runs in seconds on real world datasets.              
-            </p>
-          </td>
-       </tr>
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/llm_config_image.png' width="300">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> <a href='https://arxiv.org/abs/2412.12038'> LLMs for Cold-Start Cutting Plane Separator Configuration </a></papertitle>
-              <br>
-              <strong>Connor Lawless</strong>,
-              Yingxi Li,
-              Anders Wikum,
-              <a href="https://web.stanford.edu/~udell/">Madeleine Udell</a>,
-              <a href="https://vitercik.github.io/">Ellen Vitercik</a>
-              <br>
-              <em> CPAIOR 2025 </em>  
-              <p></p>
-              <p> Mixed integer linear programming (MILP) solvers ship with a staggering number of parameters that are challenging to select a priori for all but expert optimization users, but can have an outsized impact on the performance of the MILP solver. In this paper, we introduce a new LLM-based framework to configure which cutting plane separators to use for a given MILP problem with little to no training data based on characteristics of the instance, such as a natural language description of the problem and the associated LaTeX formulation. Our LLM-based methodology requires no custom solver interface, can find a high-performing configuration by solving only a small number of MILPs, and can generate the configuration with simple API calls that run in under a second.
-              </p>
-            </td>
-         </tr>
-         <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-          <td style="padding:20px;width:25%;vertical-align:middle">
             <img src='images/optimus_screenshot.png' width="300">
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
@@ -115,6 +77,80 @@
             <em> Major Revision at Management Science </em>  
             <p></p>
             <p> Optimization problems are pervasive in sectors from manufacturing and distribution to healthcare. However, most such problems are still solved heuristically by hand rather than optimally by state-of-the art solvers because the expertise required to formulate and solve these problems limits the widespread adoption of optimization tools and techniques. We introduce a Large Language Model (LLM)-based system designed to formulate and solve (mixed integer) linear programming problems from their natural language descriptions. Check it out for yourself <a href="https://optimus-solver.com/">here</a>.
+            </p>
+          </td>
+       </tr>
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/MiniReL_visual.png' width="220">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> <a href='https://arxiv.org/pdf/2409.02963'> Fair Minumum Representation Clustering </a></papertitle>
+              <br>
+              <strong>Connor Lawless</strong>,
+              <a href="https://www.orie.cornell.edu/faculty-directory/oktay-gunluk">Oktay Gunluk</a>
+              <br>
+              <em> Reject & Resubmit at Operations Research </em>  
+              <br>
+              <em> Preliminary version at CPAIOR (2024)</em>
+              <p></p>
+              <p> This paper considers the problem of performing k-means clustering while ensuring groups (e.g. demographic groups) have a minimum level of representation in a specified number of clusters. We show that the popular k-means algorithm (Lloyd's heuristic) can result in unfair outcomes where certain groups lack sufficient representation past the minimum threshold in a proportional number of clusters. We formulate the problem through a mixed-integer optimization framework and present a variant of Lloyd's algorithm, called MiniReL, that directly incorporates the fairness constraints. </p>
+            </td>
+         </tr>
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/llm_config_image.png' width="300">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> <a href='https://arxiv.org/abs/2412.12038'> LLMs for Cold-Start Cutting Plane Separator Configuration </a></papertitle>
+              <br>
+              <strong>Connor Lawless</strong>,
+              Yingxi Li,
+              Anders Wikum,
+              <a href="https://web.stanford.edu/~udell/">Madeleine Udell</a>,
+              <a href="https://vitercik.github.io/">Ellen Vitercik</a>
+              <br>
+              <em> Under review at INFORMS Journal on Computing  </em>  
+              <br>
+              <em> Preliminary version at CPAIOR (2025)</em>
+              <p></p>
+              <p> Mixed integer linear programming (MILP) solvers ship with a staggering number of parameters that are challenging to select a priori for all but expert optimization users, but can have an outsized impact on the performance of the MILP solver. In this paper, we introduce a new LLM-based framework to configure which cutting plane separators to use for a given MILP problem with little to no training data based on characteristics of the instance, such as a natural language description of the problem and the associated LaTeX formulation. Our LLM-based methodology requires no custom solver interface, can find a high-performing configuration by solving only a small number of MILPs, and can generate the configuration with simple API calls that run in under a second.
+              </p>
+            </td>
+         </tr>
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src='images/or_workflow.png' width="300">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle> <a href='https://arxiv.org/abs/2509.16402'> "It Was a Magical Box": Understanding Practitioner Workflows and Needs in Optimization  </a></papertitle>
+              <br>
+              <strong>Connor Lawless</strong>,
+              <a href=https://jakobschoeffer.github.io/> Jakob Schoeffer</a>,
+              <a href="https://web.stanford.edu/~udell/">Madeleine Udell</a>
+              <br>
+              <em> Under review at ACM CHI 2026 </em>  
+              <p></p>
+              <p> Optimization powers decisions in fields from healthcare to logistics, but the day-to-day work of building these models has remained largely unexplored. We interviewed 15 practitioners and found that optimization unfolds through a six-stage, highly iterative workflow—from eliciting problems to deploying solutions. Along the way, progress hinges not just on algorithms, but on messy data and continuous dialogue with stakeholders. These insights highlight new opportunities to design tools that make optimization more transparent, collaborative, and human-centered.
+              </p>
+            </td>
+         </tr>
+         <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/ReVeR_outputs.png' width="300">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle> <a href='https://arxiv.org/abs/2502.16380'> Understanding Fixed Predictions via Confined Regions </a></papertitle>
+            <br>
+            <strong>Connor Lawless</strong>,
+            <a href="https://lilywenglab.github.io/">Lily Weng</a>,
+            <a href="https://www.berkustun.com/">Berk Ustun</a>,
+            <a href="https://web.stanford.edu/~udell/">Madeleine Udell</a>,
+            <br>
+            <em> ICML 2025 </em>  
+            <p></p>
+            <p> Machine learning models are designed to predict outcomes using features about an individual, but fail to take into account how individuals can change them. Consequently, models can assign fixed predictions that deny individuals recourse to change their outcome. This work develops a new paradigm to identify fixed predictions by finding confined regions in which all individuals receive fixed predictions. We introduce the first method,
+              ReVer, for this task, using tools from mixed-integer quadratically constrained programming. Our approach certifies recourse for out-of-sample data, provides interpretable descriptions of confined regions, and runs in seconds on real world datasets.              
             </p>
           </td>
        </tr>
@@ -138,21 +174,6 @@
        </tr>
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/MiniReL_visual.png' width="220">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> <a href='https://arxiv.org/pdf/2409.02963'> Fair Minumum Representation Clustering </a></papertitle>
-              <br>
-              <strong>Connor Lawless</strong>,
-              <a href="https://www.orie.cornell.edu/faculty-directory/oktay-gunluk">Oktay Gunluk</a>
-              <br>
-              <em> Reject & Resubmit at Operations Research (initial version presented at CPAIOR 2024) </em>  
-              <p></p>
-              <p> This paper considers the problem of performing k-means clustering while ensuring groups (e.g. demographic groups) have a minimum level of representation in a specified number of clusters. We show that the popular k-means algorithm (Lloyd's heuristic) can result in unfair outcomes where certain groups lack sufficient representation past the minimum threshold in a proportional number of clusters. We formulate the problem through a mixed-integer optimization framework and present a variant of Lloyd's algorithm, called MiniReL, that directly incorporates the fairness constraints. </p>
-            </td>
-         </tr>
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
               <img src='images/meetmate.png' width="300">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -165,7 +186,7 @@
               <a href="https://www.microsoft.com/en-us/research/people/jinsuh/">Jina Suh</a>,
               <a href="https://www.microsoft.com/en-us/research/people/basarraf/">Bahar Sarrafzadeh</a>
               <br>
-              <em> ACM Transacations on Intelligent and Interactive Systems (ACM TiiS) </em>  
+              <em> ACM Transacations on Intelligent and Interactive Systems (ACM TIIS) </em>  
               <p></p>
               <p> Mathematical Programming has been a transformative technology for improving decision making in a number of industrial applications but its impact has been largely realized by large institutions that can afford the optimization expertise. We present a novel framework for interactive decision support for non-expert users that leverages large language models (LLM) to translate natural language requests into operations on an underlying constraint programming model. We investigate this framework through the lens of meeting scheduling, and showcase its potential via a user study with a prototype system. </p>
             </td>
