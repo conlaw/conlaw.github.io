@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Fair Clustering Tutorial" />
+        <meta name="author" content="John P. Dickerson" />
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        
+        <title>LLMs for Optimization Tutorial</title>
+        
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- Fancy fonts for the headers -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet" />
+        
+        <!-- Bootstrap 4+ dropped icons for some reason, this reloads them -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">LLMs for Optimization</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#related">Related Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h3 class="text-muted"> </h3>
+            
+            <div class="jumbotron">
+                <h1 class="display-4">LLMs for Optimization: Modeling, Solving, and Validating with Generative AI</h1>
+                
+                <p class="lead">Optimization is a foundational pillar of artificial intelligence (AI), underpinning core techniques in planning, scheduling, decision-making, and machine learning. Yet despite decades of algorithmic advances, widespread adoption of state-of-the-art optimization solvers remains limited by the substantial expertise required for effective modeling and solving. This expertise barrier means that powerful optimization tools remain largely inaccessible to non-experts, with most users of leading solvers holding advanced degrees.
+                </p><p class="lead">Recent advances in generative AI, particularly large language models (LLMs), offer a promising new path for democratizing optimization. By automating key steps in the optimization pipeline – from model formulation through solver configuration to model validation – LLMs promise to broaden access to powerful optimization tools. However, these models rarely work out of the box for complex reasoning tasks like optimization. 
+                </p><p class="lead">This tutorial surveys emerging research on LLMs for mathematical optimization, highlighting both practical systems and open research questions.  We will provide a comprehensive overview of how LLMs can support each stage of the optimization pipeline, including model formulation, solver configuration, and validation. The tutorial is designed to be accessible to attendees without prior experience in either field, offering both conceptual frameworks and practical insights for this rapidly evolving area of research.
+
+</p>
+                                
+            </div>
+            
+            <div class="row marketing" id="tutorial">
+                <h1>Tutorial</h1>
+            </div>
+            
+            <div class="row marketing" id="tutorial-aaai">
+                
+                <h2>AAAI 2026 Schedule &mdash; January 22nd, 2026</h2>
+                
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Speaker</th>
+                            <th>Duration</th>
+                            <th>Slides</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Introduction to Optimization and LLMs</td>
+                            <td><a href="https://conlaw.github.io/">Connor Lawless</a> </td>
+                            <td>30 minutes </td>
+                            <td> Coming Soon!</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Model Formulation </td>
+                            <td><a href="https://conlaw.github.io/">Connor Lawless</a> </td>
+                            <td>90 minutes </td>
+                            <td> Coming Soon!</td>
+                        </tr>
+                        <tr class="table-success">
+                            <th colspan="2">
+                                Break
+                            </th>
+                            <td colspan="3">30 minutes</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Model Solving</td>
+                            <td><a href="https://vitercik.github.io/">Ellen Vitercik</a></td>
+                            <td>60 minutes </td>
+                            <td> Coming Soon!</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Model Validation and Open Questions</td>
+                            <td><a href="https://conlaw.github.io/">Connor Lawless</a> </td>
+                            <td>30 minutes </td>
+                            <td> Coming Soon!</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <hr class="featurette-divider">
+            
+            
+            <div class="row marketing" id="related">
+                <h2>Recommended Reading</h2>
+                <table class="table table-striped">
+                    <caption>This is a subset of the (growing) body of work on LLMs for optimization. If you see anything missing or have a suggestion, feel free to reach out!</caption>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Topic</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan="6" class="table-secondary">
+                                Overview and Position Papers
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024</th>
+                            <td>From Large Language Models and Optimization to Decision Optimization CoPilot: A Research Manifesto </td>
+                            <td>Segev Wasserkrug, Leonard Boussioux, Dick den Hertog, Farzaneh Mirzazadeh, Ilker Birbil, Jannis Kurtz, Donato Maragno</td>
+                            <td> Position paper on combining large language models and optimization </td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2402.16269"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>"It Was a Magical Box": Understanding Practitioner Workflows and Needs in Optimization </td>
+                            <td>Connor Lawless, Jakob Schoeffer, Madeleine Udell</td>
+                            <td>Qualitative study of optimization practitioners </td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2509.16402"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>Democratizing Optimization with Generative AI </td>
+                            <td>David Simchi-Levi, Tinglong Dai, Ishai Menache, Michelle Xiao Wu</td>
+                            <td>Position paper on benefits of combining optimization and generative AI </td>
+                            <td>SSRN: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5511218"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="6" class="table-secondary">
+                                Model Formulation
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024</th>
+                            <td>"I Want It That Way": Enabling Interactive Decision Support Using Large Language Models and Constraint Programming </td>
+                            <td>Connor Lawless, Jakob Schoeffer, Lindy Le, Kael Rowan, Shilad Sen, Cristina St. Hill, Jina Suh, Bahareh Sarrafzadeh</td>
+                            <td>Includes application to meeting scheduling</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2312.06908"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>OptiMUS-0.3: Using Large Language Models to Model and Solve Optimization Problems at Scale </td>
+                            <td>Ali AhmadiTeshnizi, Wenzhi Gao, Herman Brunborg, Shayan Talaei, Connor Lawless, Madeleine Udell</td>
+                            <td>Agentic framework</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2407.19633"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>ORLM: A Customizable Framework in Training Large Models for Automated Optimization Modeling </td>
+                            <td>Chenyu Huang, Zhengyang Tang, Shixi Hu, Ruoqing Jiang, Xin Zheng, Dongdong Ge, Benyou Wang, Zizhuo Wang</td>
+                            <td>Fine-tuning based approach</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2405.17743"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>Toward a Trustworthy Optimization Modeling Agent via Verifiable Synthetic Data Generation </td>
+                            <td>Vinicius Lima, Dzung T. Phan, Jayant Kalagnanam, Dhaval Patel, Nianjun Zhou</td>
+                            <td>Improved synthetic data generation pipeline</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2508.03117"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>OptiMind: Teaching LLMs to Think Like Optimization Experts </td>
+                            <td>Xinzhi Zhang, Zeyi Chen, Humishka Zope, Hugo Barbalho, Konstantina Mellou, Marco Molinaro, Janardhan Kulkarni, Ishai Menache, Sirui Li</td>
+                            <td>Integrates optimization expertise into pipeline</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2509.22979"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                            <th colspan="6" class="table-secondary">
+                                Model Evaluation
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024</th>
+                            <td>Towards Human-aligned Evaluation for Linear Programming Word Problems </td>
+                            <td>Linzi Xing, Xinglu Wang, Yuxi Feng, Zhenan Fan, Jing Xiong, Zhijiang Guo, Xiaojin Fu, Rindra Ramamonjison, Mahdi Mostajabdaveh, Xiongwei Han, Zirui Zhou, Yong Zhang</td>
+                            <td>Graph-edit based definition</td>
+                            <td>arXiv: <a href="https://aclanthology.org/2024.lrec-main.1438.pdf"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations </td>
+                            <td>Haotian Zhai, Connor Lawless, Ellen Vitercik, Liu Leqi</td>
+                            <td>Introduces a formal definition for checking equivalent formulations</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2502.14760"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th colspan="6" class="table-secondary">
+                                Model Solving
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024</th>
+                            <td>Evolution of Heuristics: Towards Efficient Automatic Algorithm Design Using Large Language Model</td>
+                            <td>Fei Liu, Xialiang Tong, Mingxuan Yuan, Xi Lin, Fu Luo, Zhenkun Wang, Zhichao Lu, Qingfu Zhang</td>
+                            <td>Evolutionary search applied to heuristics</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2401.02051"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>LLMs for Cold-Start Cutting Plane Separator Configuration </td>
+                            <td>Connor Lawless, Yingxi Li, Anders Wikum, Madeleine Udell, Ellen Vitercik</td>
+                            <td>Investigates LLMs for solver configuration</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2412.12038"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+
+
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>EvoCut: Strengthening Integer Programs via Evolution-Guided Language Models </td>
+                            <td>Milad Yazdani, Mahdi Mostajabdaveh, Samin Aref, Zirui Zhou</td>
+                            <td>Evolutionary search applied to cutting planes</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2508.11850"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>DHEvo: Data-Algorithm Based Heuristic Evolution for Generalizable MILP Solving </td>
+                            <td>Zhihao Zhang, Siyuan Li, Chenxi Li, Feifan Liu, Mengjing Chen, Kai Li, Tao Zhong, Bo An, Peng Liu</td>
+                            <td>Investigates LLMs for primal heuristics</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2507.15615"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th colspan="6" class="table-secondary">
+                                Model Validation
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row">2023</th>
+                            <td>Large Language Models for Supply Chain Optimization </td>
+                            <td>Beibin Li, Konstantina Mellou, Bo Zhang, Jeevan Pathuri, Ishai Menache</td>
+                            <td>Q&A for Supply Chain Optimization</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2307.03875"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2023</th>
+                            <td>Diagnosing infeasible optimization problems using large language models </td>
+                            <td>Hao Chen, Gonzalo E Constante-Flores, Can Li</td>
+                            <td>Interface for infeasibility diagnosis </td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2308.12923"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td>OptiChat: Bridging Optimization Models and Practitioners with Large Language Models </td>
+                            <td>Hao Chen, Gonzalo Esteban Constante-Flores, Krishna Sri Ipsit Mantri, Sai Madhukiran Kompalli, Akshdeep Singh Ahluwalia, Can Li</td>
+                            <td>Q&A for General Optimization Models</td>
+                            <td>arXiv: <a href="https://arxiv.org/abs/2501.08406"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+            </div>
+            
+            <hr class="featurette-divider">
+            
+            <h1>About Us</h1>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row marketing" id="about">
+                        <div class="col-sm">
+                            <a href="https://sites.google.com/view/leonardboussioux/">  Léonard Boussioux </a> (University of Washington): Léonard Boussioux is an Assistant Professor of Information Systems at the University of Washington Foster School of Business and adjunct at the Allen School of Computer Science & Engineering. His research combines multimodal AI with optimization frameworks to develop human-AI collaboration systems for healthcare, sustainability, and innovation. He has received numerous awards, including the MIT Goodwin Medal.
+                        </div>
+
+                            <div class="col-sm"> <img src="img/leo_headshot.jpg" alt="Picture of Leonard Boussioux" class="img-thumbnail" width="200"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row marketing" id="about">
+                        <div class="col-sm">
+                            <a href="https://conlaw.github.io/">Connor Lawless</a> (Stanford): Connor Lawless is a Human-Centered AI postdoctoral researcher at Stanford, with a PhD in Operations Research and Information Engineering from Cornell. His work blends machine learning, computational optimization, and human–computer interaction to create human-centered artificial intelligence.
+                        </div>
+                        <div class="col-sm"> <img src="img/connor_headshot.jpeg" alt="Picture of Connor Lawless" class="img-thumbnail" width="200"/>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row marketing" id="about">
+                        <div class="col-sm">
+                            <a href="https://web.stanford.edu/~udell/">Madeleine Udell</a> (Stanford): Madeleine Udell is an Assistant Professor of Management Science and Engineering at Stanford University. Her research uses optimization and machine learning to simplify large-scale data analysis, with real-world applications in healthcare, finance, marketing, and engineering systems. She has received numerous awards, including the Kavli Fellowship and the Alfred P. Sloan Research Fellowship.
+                        </div>
+                        <div class="col-sm"> <img src="img/madeleine_headshot.jpg" alt="Picture of Madeleine Udell" class="img-thumbnail" width="200"/>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row marketing" id="about">
+                        <div class="col-sm">
+                            <a href="https://vitercik.github.io/">Ellen Vitercik</a> (Stanford): Ellen Vitercik is an Assistant Professor at Stanford with a joint appointment between the Management Science & Engineering and Computer Science departments. Her research—which has been recognized with a Schmidt Sciences AI2050 Early Career Fellowship and an NSF CAREER award, among other honors—spans machine learning and discrete optimization.
+                        </div>
+                        <div class="col-sm"> <img src="img/ellen_headshot.jpg" alt="Picture of Ellen Vitercik" class="img-thumbnail" width="200"/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <hr class="featurette-divider">
+            
+            <footer class="footer">
+                Website template from <a href="https://www.fairclustering.com/">AAAI 2022 Fair Clustering Tutorial</a>
+            </footer>
+            
+        </div> <!-- /container -->
+        
+    </body>
+</html>
